@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container1 {
+    background-image: url('images/ceo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+    height: 600px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block {
+    margin: 0 10px;
+    text-align: center;
+    text-decoration-thickness:bold ;
+}
+
+.number {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    block-size: 70px;
+    background-color:rgb(197, 252, 252);
+    
+}

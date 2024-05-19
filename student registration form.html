@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Student Registration Form</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+       
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f4f1f1;
+  padding: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+</style>
+</head>
+<body>
+
+    <div class="container">
+		<h2 style="text-align: center; background-color: rgb(172, 172, 172);">Student Registration Form</h2>
+		<p>Fill out the form Carefully for register</p>
+		<form>
+			<div class="form-group">
+				<h1 style="background-color: #f4f1f1;">Student Name</h1>
+				<label for="firstName" style="background-color: #f4f1f1;">First Name:</label>
+				<input type="text" id="firstName" name="firstName">
+				<label for="middleName" style="background-color: #f4f1f1;">Middle Name:</label>
+				<input type="text" id="middleName" name="middleName">
+				<label for="lastName" style="background-color:#f4f1f1;">Last Name:</label>
+				<input type="text" id="lastName" name="lastName">
+			</div>
+			<div class="form-group">
+				<label for="birthDate" style="background-color: #f4f1f1;">Birth Date:</label>
+				<select id="month" name="month">
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+				</select>
+				<input type="number" id="day" name="day" min="1" max="31">
+				<input type="number" id="year" name="year" min="1950" max="2023"><br><br>
+			</div>
+			<div class="form-group">
+				<label for="gender" style="background-color:#f4f1f1;">Gender:</label>
+				<select id="gender" name="gender">
+					<option value="Male"style="background-color: #f4f1f1;">Male</option>
+					<option value="Female"style="background-color:#f4f1f1;">Female</option>
+					<option value="Other"style="background-color: #f4f1f1;">Other</option>
+				</select><br><br>
+			</div>
+			<div class="form-group">
+				<label for="address" style="background-color: #f4f1f1;">Address:</label>
+				<input type="text" id="address" name="address"><br><br>
+				<label for="addressLine2" style="background-color: #f4f1f1;">Address Line 2:</label>
+				<input type="text" id="addressLine2" name="addressLine2"><br><br>
+			</div>
+			<div class="form-group">
+				<label for="state"style="background-color: #f4f1f1;">State/Province:</label>
+				<input type="text" id="state" name="state"><br><br>
+				<label for="city"style="background-color: #f4f1f1;">City:</label>
+				<input type="text" id="city" name="city"><br><br>
+				<label for="postalCode"style="background-color:#f4f1f1;">Postal/Zip Code:</label>
+				<input type="text" id="postalCode" name="postalCode"><br><br>
+			</div>	
+			<div class="form-group">
+				<label for="email"style="background-color: #f4f1f1;">Student Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="mobileNumber"style="background-color: #f4f1f1;">Mobile Number:</label>
+				<input type="tel" id="mobileNumber" name="mobileNumber"><br><br>
+				<label for="phoneNumber"style="background-color: #f4f1f1;">Phone Number:</label>
+				<input type="tel" id="phoneNumber" name="phoneNumber"><br><br>
+			</div>
+			<div class="form-group">
+				<label for="company"style="background-color: #f4f1f1;">Company:</label>
+				<input type="text" id="company" name="company"><br><br>
+			</div>
+			<div class="form-group">
+				<label for="courses"style="background-color: #f4f1f1;">Courses:</label>
+				<input type="text" id="courses" name="courses"><br><br>
+			</div>
+			<div class="form-group">
+				<label for="comments"style="background-color: #f4f1f1;">Additional Comments:</label>
+				<textarea id="comments" name="comments"></textarea><br><br>
+			</div>
+			<input type="submit" value="Submit Application">
+			<input type="reset" value="Clear Fields" style="color: #1acad3;">
+			</form>
+			</div>  		
+			
+</body>
+</html>
